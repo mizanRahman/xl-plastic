@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home | XL Plastic</title>
+    <title>Products | XL Plastic</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -24,6 +24,7 @@
   <body>
 
     
+
 <div class="container">
   <div class="row">
     <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
@@ -31,82 +32,116 @@
     </div>
 
     <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
-              <ul class="nav navbar-nav">
-                <!-- you can exclude pages using {{#isnt}} helper: {{#isnt data.title 'Blog'}} -->
-                
-                <li>
-                  <a href="blog.html">Blog</a>
-                </li>
-                
-                <li class="active">
-                  <a href="index.html">Home</a>
-                </li>
-                
-                <li>
-                  <a href="products.html">Products</a>
-                </li>
-                
-              </ul>
-
+      <div class="row">
+        <div class="pull-right">
+          <h4>
+            <span class="glyphicon glyphicon-earphone"></span>1.800.524.0781<br/>
+            <div class="pull-right glyphicon glyphicon glyphicon-envelope"></div>
+          </h4>
+        </div>
+      </div>
+      <div class=" row xl-navbar">
+        <ul class="nav navbar-nav">
+          <!-- you can exclude pages using {{#isnt}} helper: {{#isnt data.title 'Blog'}} -->
+          
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          
+          <li class="active">
+            <a href="index.html">Products</a>
+          </li>
+          
+          <li>
+            <a href="industries.html">Industries</a>
+          </li>
+          
+        </ul>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- Fixed navbar -->
-<div class="navbar" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">XL Plastic</a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <!-- you can exclude pages using {{#isnt}} helper: {{#isnt data.title 'Blog'}} -->
-        
-        <li>
-          <a href="blog.html">Blog</a>
-        </li>
-        
-        <li class="active">
-          <a href="index.html">Home</a>
-        </li>
-        
-        <li>
-          <a href="products.html">Products</a>
-        </li>
-        
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Github <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="https://github.com/assemble/assemble">Assemble</a></li>
-            <li><a href="https://github.com/assemble/generator-assemble">Generator Assemble</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">Plugins</li>
-            <li><a href="https://github.com/assemble/assemble-contrib-permalinks">assemble-contrib-permalinks</a></li>
-            <li><a href="https://github.com/assemble/assemble-contrib-sitemap">assemble-contrib-sitemap</a></li>
 
-          </ul>
-        </li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-</div>
-
-
-    <div class="container theme-showcase" role="main">
-
+    <div class="" role="main">
       
-<div class="jumbotron">
-  <h1>Yo, Assemble!</h1>
-  <p>This is a Assemble Generator template using <a href="http://getbootstrap.com">Bootstrap</a>. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-  <p><a href="blog.html" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+
+<!-- Slider -->
+
+
+<div id="xl-carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#xl-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#xl-carousel" data-slide-to="1"></li>
+    <li data-target="#xl-carousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img data-src="holder.js/1350x350/social">
+      <div class="carousel-caption">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, eligendi eaque provident excepturi quae modi non animi numquam maxime neque saepe dolore hic laboriosam doloremque quasi iste ducimus sapiente odit!
+      </div>
+    </div>
+    <div class="item">
+      <img data-src="holder.js/1350x350/industrial">
+      <div class="carousel-caption">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, eligendi eaque provident excepturi quae modi non animi numquam maxime neque saepe dolore hic laboriosam doloremque quasi iste ducimus sapiente odit!
+      </div>
+    </div>
+    <div class="item">
+      <img data-src="holder.js/1350x350/lava">
+      <div class="carousel-caption">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, eligendi eaque provident excepturi quae modi non animi numquam maxime neque saepe dolore hic laboriosam doloremque quasi iste ducimus sapiente odit!
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#xl-carousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#xl-carousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+
+
+<!-- Main content -->
+<br/>
+<div class="container">
+	<!-- showcase -->
+	<div class="row">
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      	<img class="center-block" data-src="holder.js/500x300/sky">
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      	<img class="center-block" data-src="holder.js/500x300/sky">
+		</div>
+	</div>
+
+	<br/>
+	<div class="row">
+    <div class="text-center col-xs-4">
+      <img class="center-block img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;">
+      <h2>Recycling</h2>
+      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+    </div>
+    <div class="text-center col-xs-4">
+      <img class="center-block img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;">
+      <h2>Custom</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, fugit, temporibus, officiis, impedit non sapiente excepturi rerum dicta magni natus quod minus eaque velit amet tempore quia eius modi omnis?</p>
+
+    </div>
+    <div class="text-center col-xs-4">
+      <img class="center-block img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;">
+      <h2>Plastics</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, fugit, temporibus, officiis, impedit non sapiente excepturi rerum dicta magni natus quod minus eaque velit amet tempore quia eius modi omnis?</p>
+    </div>
+  </div>
 </div>
 
 
@@ -116,5 +151,6 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/holder.js"></script>
   </body>
 </html>
