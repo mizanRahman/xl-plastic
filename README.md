@@ -4,3 +4,9 @@
 
 ## [assemble](http://assemble.io/)
 
+## How to develop
+
+- start the development server
+	`grunt server`
+
+

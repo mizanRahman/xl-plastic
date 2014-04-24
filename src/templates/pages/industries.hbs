@@ -1,13 +1,43 @@
 ---
 title: Industries
----
-<h1>{{title}}</h1>
+message: We Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, ratione, minima, blanditiis, voluptas odit possimus veritatis dolorem error architecto soluta porro in recusandae nihil magni tempore dicta neque quas excepturi.
+slogan:
 
+news:
+  - title: Medical
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, iusto, esse itaque modi cumque officia placeat quo sequi odio veniam vitae non ab optio cum soluta temporibus eos ut quis.
+  - title: Pharmaceutical
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, iusto, esse itaque modi cumque officia placeat quo sequi odio veniam vitae non ab optio cum soluta temporibus eos ut quis.
+  - title: food service
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, iusto, esse itaque modi cumque officia placeat quo sequi odio veniam vitae non ab optio cum soluta temporibus eos ut quis.
+  - title: hospitatility
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, iusto, esse itaque modi cumque officia placeat quo sequi odio veniam vitae non ab optio cum soluta temporibus eos ut quis.
+  - title: auto move
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, iusto, esse itaque modi cumque officia placeat quo sequi odio veniam vitae non ab optio cum soluta temporibus eos ut quis.
+
+---
 
 <div class="row">
-	<div class="panel panel-default">
-		<div class="panel-body">
-		   Basic panel example
+	<img data-src="holder.js/1350x350/social">
+</div>
+
+<div class="container">
+	<h1>{{title}}</h1>
+	<div class="row">
+		<div class="col-xs-6">
+			<p>{{message}}</p>
+			<h3>{{slogan}}</h3>
 		</div>
+
+		<div class="col-xs-6 news-panel">
+		  {{#each news}}
+		  	<div class="news">
+		  		  <h2>{{this.title}}</h2>
+						<p>{{this.content}}</p>
+		  	</div>
+
+			{{/each}}
+		</div>
+
 	</div>
 </div>

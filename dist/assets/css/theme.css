@@ -1,9 +1,30 @@
-body {
-    /*padding-top: 70px;*/
-    padding-bottom: 30px;
+.xl-navbar, .xl-footer {
+    text-transform: uppercase;
 }
 .xl-navbar {
     border-top: 2px solid #ccc;
     margin-top: 50px;
-    text-transform: uppercase;
+}
+.xl-navbar a{
+    color: #999 !important;
+}
+.xl-footer {
+    background-color: #549;
+}
+.custom-block{
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+
+}
+
+.news-panel{
+	border-right: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
+.news:not(:first-child){
+	border-top: 1px solid #ccc;
+
+
+
+
 }
