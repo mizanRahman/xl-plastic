@@ -7,6 +7,10 @@ body {
   background-position: -310px 125%;
   font-family: 'Oswald', 'sans-serif'; }
 
+.container {
+  padding-left: 65px;
+  padding-right: 65px; }
+
 .xl-navbar, .xl-footer {
   text-transform: uppercase; }
 
@@ -16,7 +20,7 @@ body {
 
 .navbar-nav > li,
 .dropdown-menu {
-  min-width: 140px;
+  min-width: 130px;
   border-top: 2px solid #ccc;
   padding: 0; }
 
