@@ -11,18 +11,19 @@ body {
   text-transform: uppercase; }
 
 .xl-navbar {
-  border-top: 2px solid #ccc;
   margin-top: 50px;
   margin-bottom: 0; }
 
 .navbar-nav > li,
 .dropdown-menu {
   min-width: 140px;
+  border-top: 2px solid #ccc;
   padding: 0; }
 
 .dropdown-menu > li {
   background-color: #1674ba;
-  border-bottom: 1px solid #2684ca; }
+  border-bottom: 1px solid #1f90e4;
+  padding: 5px 2px; }
 
 .dropdown-menu > li > a {
   padding: 3px 2px; }
