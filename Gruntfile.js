@@ -22,12 +22,27 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
 
+
     config: {
       src: 'src',
       dist: 'dist'
     },
-
+    sass: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.src %>/styles',
+          src: ['*.scss'],
+          dest: '<%= config.dist %>/assets/css',
+          ext: '.css'
+        }]
+      }
+    },
     watch: {
+      sass: {
+        files: ['<%= config.src %>/styles/{,*/}*.scss'],
+        tasks: ['sass']
+      },
       assemble: {
         files: ['<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}'],
         tasks: ['assemble']
@@ -88,17 +103,20 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   grunt.registerTask('server', [
     'clean',
     'assemble',
+    'sass',
     'connect:livereload',
     'watch'
   ]);
 
   grunt.registerTask('build', [
     'clean',
-    'assemble'
+    'assemble',
+    'sass'
   ]);
 
   grunt.registerTask('default', [
