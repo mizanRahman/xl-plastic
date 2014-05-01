@@ -1,0 +1,20 @@
+{
+  "name": "xl-plastic",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mizanRahman/xl-plastic",
+  "authors": [
+    "Mizan Rahman <mizan.cse.buet@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sass-bootstrap": "~3.0.2"
+  }
+}
