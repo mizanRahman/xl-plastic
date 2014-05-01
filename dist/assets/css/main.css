@@ -5,11 +5,15 @@ body {
   /*background-position:-105px 117%;*/
   /*background-size: 110%;*/
   background-position: -310px 125%;
-  font-family: 'Oswald', 'sans-serif'; }
+  font-family: 'Oswald', 'sans-serif';
+  background-color: white; }
 
 .container {
   padding-left: 65px;
   padding-right: 65px; }
+
+.logo {
+  padding-top: 30px; }
 
 .xl-navbar, .xl-footer {
   text-transform: uppercase; }
@@ -23,6 +27,14 @@ body {
   min-width: 130px;
   border-top: 2px solid #ccc;
   padding: 0; }
+  .navbar-nav > li:hover,
+  .dropdown-menu:hover {
+    border-color: white; }
+
+/*stop and change navigation color change default of  bootstrap*/
+.nav > li > a:hover,
+.nav > li > a:active {
+  background-color: #1674ba !important; }
 
 .dropdown-menu > li {
   background-color: #1674ba;
