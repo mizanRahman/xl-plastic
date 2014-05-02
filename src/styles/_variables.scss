@@ -1,9 +1,57 @@
-/*bootstrap custom*/
-$border-radius-base:             0px !default;
-$border-radius-large:            0px !default;
-$border-radius-small:            0px !default;
 
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              lighten(#000, 20%) !default;   // #333
+$gray:                   lighten(#000, 33.5%) !default; // #555
+$gray-light:             lighten(#000, 60%) !default;   // #999
+$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+
+
+$blue-base: #00f;
+$blue-darker:            lighten($blue-base, 13.5%) !default; // #
+$blue-dark:              lighten($blue-base, 20%) !default;   // #
+$blue:                   lighten($blue-base, 33.5%) !default; // #
+$blue-light:             lighten($blue-base, 60%) !default;   // #
+$blue-lighter:           lighten($blue-base, 93.5%) !default; // #
 
 /*applicaiton specific*/
-$blue: #1674ba;
-$bg-color: #FFF;
+
+$sky: #1674ba;
+/*color picks*/
+
+
+
+$primary-color: #1674BA;
+$secondary-color: lighten($primary-color,20%);
+$news-header-color: #2272B9;
+$news-content-color: #002B55;
+
+/*******************/
+
+$navbar-dropdown-bg: $primary-color;
+$navbar-hover-bg: #4590C9; // lighter primary-color
+$footer-bg: #041764;
+
+
+
+
+
+
+/*color picks*/
+
+
+
+
+
+
+
+
+$bg-color: #fff;
+
+$container-width: 1027px;
+$carousel-width: 1280px;
+$carousel-height: 400px;
+
+/*typography*/
+$font-family: 'Oswald', 'sans-serif';
+
+
