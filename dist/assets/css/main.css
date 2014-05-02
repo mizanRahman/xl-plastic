@@ -4996,9 +4996,21 @@ td.visible-print {
   th.hidden-print,
   td.hidden-print {
     display: none !important; } }
+.left-wave {
+  background-image: url("../images/leftwave.png");
+  background-repeat: no-repeat;
+  background-position: left bottom; }
+
+.right-wave {
+  background-image: url("../images/rightwave.png");
+  background-repeat: no-repeat;
+  background-position: right bottom; }
+
+.page {
+  padding-bottom: 20px;
+  min-height: 1000px; }
+
 body {
-  /*background-position:-105px 117%;*/
-  /*background-size: 110%;*/
   background-color: white; }
 
 .logo {
@@ -5061,13 +5073,13 @@ body {
 
 .xl-footer {
   color: #fff;
-  background-color: #041764;
-  margin-top: 120px; }
+  background-color: #041764; }
 
 .page-heading {
   color: #1674ba;
   text-transform: uppercase;
-  font-size: 84px; }
+  font-size: 68px;
+  font-weight: bold; }
 
 .page-subheading {
   color: #1674ba;
@@ -5102,3 +5114,11 @@ body {
 .form-control {
   -webkit-box-shadow: none;
   box-shadow: none; }
+
+/*
+**a fix to create carousel controls positioned right place and take proper size
+*/
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  height: 85px;
+  width: 86px; }

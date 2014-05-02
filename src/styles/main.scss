@@ -1,14 +1,23 @@
 @import 'base';
 
-body{
-	// background-image: url('../images/bg.png');
-	// background-repeat: no-repeat;
-	// background-position:-310px 125%;
+.left-wave{
+		background-image: url('../images/leftwave.png');
+		background-repeat: no-repeat;
+		background-position: left bottom;
+}
+.right-wave{
+		background-image: url('../images/rightwave.png');
+		background-repeat: no-repeat;
+		background-position: right bottom;
+}
 
-	/*background-position:-105px 117%;*/
-	/*background-size: 110%;*/
+.page{
+	padding-bottom: 20px;
+	min-height: 1000px;
+}
+
+body{
 	background-color: $bg-color;
-	// font-family: 'Oswald', 'sans-serif';
 }
 
 .logo{padding-top: 0px;}
@@ -105,15 +114,15 @@ body{
 .xl-footer {
 	color: #fff;
   background-color: $footer-bg;
-  margin-top: 120px;
+  // margin-top: 120px;
 }
 
 
 .page-heading{
 	color: $primary-color;
 	text-transform: uppercase;
-
-	font-size: 84px;
+	font-size: 68px;
+	font-weight: bold;
 }
 
 .page-subheading{
@@ -172,3 +181,13 @@ body{
 	@include box-shadow(none);
 }
 
+/*
+**a fix to create carousel controls positioned right place and take proper size
+*/
+.carousel-control {
+	.icon-prev,
+	.icon-next{
+		height: 85px;
+		width: 86px;
+	}
+}

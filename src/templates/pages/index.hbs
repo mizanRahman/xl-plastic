@@ -37,10 +37,14 @@ title: Products
 
   <!-- Controls -->
   <a class="left carousel-control" href="#xl-carousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
+    {{!-- <span class="glyphicon  xl-left glyphicon-chevron-left"> --}}
+      <img class="icon-prev" src="assets/images/leftarrow.png" alt="<">
+
+    </span>
   </a>
   <a class="right carousel-control" href="#xl-carousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
+    <img class="icon-next" src="assets/images/rightarrow.png" alt=">">
+
   </a>
 </div>
 
@@ -62,18 +66,19 @@ title: Products
 	<br/>
 	<div class="row">
     <div class="text-center col-xs-4">
-      <img class="center-block img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;">
+      <img class="center-block img-circle" src="assets/images/custom.png" alt="140x140">
+
       <h2>{{product.title1}}</h2>
       <p>{{product.content1}}</p>
     </div>
     <div class="text-center col-xs-4 custom-block">
-      <img class="center-block img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;">
+      <img class="center-block img-circle" src="assets/images/plastics.png" alt="140x140">
       <h2>{{product.title2}}</h2>
       <p>{{product.content2}}</p>
 
     </div>
     <div class="text-center col-xs-4">
-      <img class="center-block img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;">
+      <img class="center-block img-circle" src="assets/images/recycle.png" alt="140x140">
       <h2>{{product.title3}}</h2>
       <p>{{product.content3}}</p>
     </div>
