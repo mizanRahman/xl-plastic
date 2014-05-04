@@ -20,21 +20,21 @@ body{
 	background-color: $bg-color;
 }
 
-.logo{padding-top: 0px;}
+.logo{padding-top: 15px;}
 
 .contact-phone{
 	color: $gray-light;
 	.tel-icon{color: $primary-color;margin-right: 5px;}
 }
 
-.msg-icon{font-size: $font-size-large;}
+.msg-icon{font-size: $font-size-base*1.5;}
 
 .xl-navbar, .xl-footer {
     text-transform: uppercase;
 }
 
 .xl-navbar {
-    margin-top: 50px;
+    margin-top: 65px;
     margin-bottom: 0;
 }
 
@@ -67,19 +67,22 @@ body{
 // }
 
 .dropdown-menu>li>a{
-	padding: 10px 2px;
+	padding: 0;
 	font-weight: 300;
+	line-height: 36px;
 }
 
 .dropdown-menu>li:not(:first-child){
-	border-top: 1px solid lighten($navbar-dropdown-bg,20%);
+	border-top: 1px solid;
+	border-color: rgba(255,255,255,0.5);
+	font-size: $font-size-small;
 }
 
 .navbar-nav>li>a{
 }
 
 .navbar-nav {
-	> .dropdown > a .caret{
+	> .dropdown > a .caret {
       border-top-color: $navbar-default-link-color;
       border-bottom-color: $navbar-default-link-color;
 	}
@@ -87,8 +90,6 @@ body{
   > li > a {
   	color: $gray-light !important;
   }
-
-
   // Uncollapse the nav
   @media (min-width: $grid-float-breakpoint) {
     float: left;
@@ -114,7 +115,16 @@ body{
 .xl-footer {
 	color: #fff;
   background-color: $footer-bg;
-  // margin-top: 120px;
+
+  .tel{
+  	font-size: 15px;
+  	font-weight: lighter;
+
+  	.num{
+  		font-size:20px;
+	  	font-weight: normal;
+  	}
+  }
 }
 
 
@@ -130,15 +140,24 @@ body{
 	text-transform: uppercase;
 
 }
+.news{
 
-.news-heading{
-	text-transform: uppercase;
-	color: $news-header-color;
-  font-weight: bold;
+	.news-heading{
+		text-transform: uppercase;
+		color: $primary-color;
+		font-size: 25px;
+	}
+	.news-content{
+		font-size: $font-size-small;
+	}
 }
 
 .message{
-	color: $secondary-color;
+	color: $primary-color;
+	font-size: 27px;
+	line-height: 36px;
+	font-family: $font-family-secondary;
+	font-weight: lighter;
 }
 
 

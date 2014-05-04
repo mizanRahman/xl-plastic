@@ -44,7 +44,7 @@ $font-family-serif:       $font-family !default;
 $font-family-monospace:   $font-family !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          14px !default;
+$font-size-base:          12px !default;
 $font-size-large:         ceil($font-size-base * 1.25) !default; // ~18px
 $font-size-small:         ceil($font-size-base * 0.85) !default; // ~12px
 
@@ -254,7 +254,7 @@ $grid-float-breakpoint:     $screen-sm-min !default;
 // -------------------------
 
 // Basics of a navbar
-$navbar-height:                    50px !default;
+$navbar-height:                    58px !default;
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor($grid-gutter-width / 2) !default;
@@ -625,13 +625,13 @@ $component-offset-horizontal: 180px !default;
 // --------------------------------------------------
 
 // Small screen / tablet
-$container-tablet:             $container-width !default;
+$container-tablet:             (($container-width + $grid-gutter-width)) !default;
 $container-sm:                 $container-tablet !default;
 
 // Medium screen / desktop
-$container-desktop:            $container-width !default;
+$container-desktop:            (($container-width + $grid-gutter-width)) !default;
 $container-md:                 $container-desktop !default;
 
 // Large screen / wide desktop
-$container-large-desktop:      $container-width !default;
+$container-large-desktop:      (($container-width + $grid-gutter-width)) !default;
 $container-lg:                 $container-large-desktop !default;
