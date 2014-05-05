@@ -1,0 +1,95 @@
+---
+title: Packaging Bags
+image_path: assets/images/packaging_bags
+
+left-items:
+  - image: assets/images/packaging_bags/drum.png
+    title: drum liners
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, nihil, aliquam, voluptate nesciunt voluptatum reprehenderit odio porro dignissimos eligendi velit esse dolorum cum dicta vel minus architecto itaque rerum optio.
+
+  - image: assets/images/packaging_bags/boxes.png
+    title: carton liners
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, nihil, aliquam, voluptate nesciunt voluptatum reprehenderit odio porro dignissimos eligendi velit esse dolorum cum dicta vel minus architecto itaque rerum optio.
+
+  - image: assets/images/packaging_bags/pallet.png
+    title: pallet covers
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, nihil, aliquam, voluptate nesciunt voluptatum reprehenderit odio porro dignissimos eligendi velit esse dolorum cum dicta vel minus architecto itaque rerum optio.
+
+  - image: assets/images/packaging_bags/danger.png
+    title: asbestos liners
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, nihil, aliquam, voluptate nesciunt voluptatum reprehenderit odio porro dignissimos eligendi velit esse dolorum cum dicta vel minus architecto itaque rerum optio.
+
+  - image: assets/images/packaging_bags/flame.png
+    title: flame retardent sheets/bags
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, nihil, aliquam, voluptate nesciunt voluptatum reprehenderit odio porro dignissimos eligendi velit esse dolorum cum dicta vel minus architecto itaque rerum optio.
+
+  - image: assets/images/packaging_bags/plant.png
+    title: biodegradable bags
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, nihil, aliquam, voluptate nesciunt voluptatum reprehenderit odio porro dignissimos eligendi velit esse dolorum cum dicta vel minus architecto itaque rerum optio.
+
+right-items:
+  - image: assets/images/packaging_bags/bio.png
+    title: red biohazards
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, nihil, aliquam, voluptate nesciunt voluptatum reprehenderit odio porro dignissimos eligendi velit esse dolorum cum dicta vel minus architecto itaque rerum optio.
+  - image: assets/images/packaging_bags/pills.png
+    title: pharmaceutical packaging
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, nihil, aliquam, voluptate nesciunt voluptatum reprehenderit odio porro dignissimos eligendi velit esse dolorum cum dicta vel minus architecto itaque rerum optio.
+  - image: assets/images/packaging_bags/mattress.png
+    title: mattress bags
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, nihil, aliquam, voluptate nesciunt voluptatum reprehenderit odio porro dignissimos eligendi velit esse dolorum cum dicta vel minus architecto itaque rerum optio.
+  - image: assets/images/packaging_bags/couch.png
+    title: furniture bags
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, nihil, aliquam, voluptate nesciunt voluptatum reprehenderit odio porro dignissimos eligendi velit esse dolorum cum dicta vel minus architecto itaque rerum optio.
+  - image: assets/images/packaging_bags/washer.png
+    title: soiled linen/laundry bags
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, nihil, aliquam, voluptate nesciunt voluptatum reprehenderit odio porro dignissimos eligendi velit esse dolorum cum dicta vel minus architecto itaque rerum optio.
+
+banner-link: assets/images/page-banners/packaging_bags.jpg
+---
+
+{{> banner }}
+
+
+<div class="container">
+	<h1 class="page-heading">{{title}}</h1>
+
+	<div class="row">
+		<div class="col-xs-6">
+			{{#each left-items}}
+				<div class="row">
+					<div class="col-xs-2">
+						<span> <img src="{{image}}" alt=""></span>
+					</div>
+					<div class="col-xs-10">
+						<h4>{{this.title}}</h4>
+						<p>{{this.description}}</p>
+					</div>
+
+				</div>
+			{{/each}}
+		</div>
+		<div class="col-xs-6">
+			{{#each right-items}}
+				<div class="row">
+					<div class="col-xs-2">
+						<span> <img src="{{image}}" alt=""></span>
+					</div>
+					<div class="col-xs-10">
+						<h4>{{this.title}}</h4>
+						<p>{{this.description}}</p>
+					</div>
+
+				</div>
+			{{/each}}
+		</div>
+	</div>
+
+
+</div>
+
+
+
+
+
+
+

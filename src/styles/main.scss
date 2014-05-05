@@ -161,6 +161,44 @@ body{
 }
 
 
+.uc{text-transform: uppercase;}
+
+.xl-table{
+	color: #fff;
+	margin: 0 5px 20px 5px;
+
+	p{
+		font-size: $font-size-small;
+	}
+	.col,
+	.left-col,
+	.right-col{
+		background-color: $primary-color;
+		//padding: 10px;
+		//padding-left: 20px;
+	}
+
+	.left-col{
+		border-right: 1px solid $bg-color;
+		@include border-left-radius(8px);
+
+	}
+	.right-col{
+		@include border-right-radius(8px);
+
+
+	}
+}
+
+.left-industrial-products{
+	margin-left: 40px;
+}
+.right-industrial-products{
+	margin-left: 40px;
+}
+
+
+
 
 
 

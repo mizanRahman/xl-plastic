@@ -5111,6 +5111,32 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: lighter; }
 
+.uc {
+  text-transform: uppercase; }
+
+.xl-table {
+  color: #fff;
+  margin: 0 5px 20px 5px; }
+  .xl-table p {
+    font-size: 11px; }
+  .xl-table .col,
+  .xl-table .left-col,
+  .xl-table .right-col {
+    background-color: #1674ba; }
+  .xl-table .left-col {
+    border-right: 1px solid white;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px; }
+  .xl-table .right-col {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px; }
+
+.left-industrial-products {
+  margin-left: 40px; }
+
+.right-industrial-products {
+  margin-left: 40px; }
+
 .news-avatar {
   padding-top: 25px; }
 
