@@ -5,14 +5,19 @@ slogan:
 
 news:
   - title: Medical
+    image: drop_icon.png
     content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, iusto, esse itaque modi cumque officia placeat quo sequi odio veniam vitae non ab optio cum soluta temporibus eos ut quis.
   - title: Pharmaceutical
+    image: pills.png
     content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, iusto, esse itaque modi cumque officia placeat quo sequi odio veniam vitae non ab optio cum soluta temporibus eos ut quis.
   - title: food service
+    image: corn.png
     content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, iusto, esse itaque modi cumque officia placeat quo sequi odio veniam vitae non ab optio cum soluta temporibus eos ut quis.
-  - title: hospitatility
+  - title: hospitality
+    image: hospitality.png
     content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, iusto, esse itaque modi cumque officia placeat quo sequi odio veniam vitae non ab optio cum soluta temporibus eos ut quis.
   - title: auto move
+    image: auto.png
     content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, iusto, esse itaque modi cumque officia placeat quo sequi odio veniam vitae non ab optio cum soluta temporibus eos ut quis.
 
 banner-link: assets/images/page-banners/industries.jpg
@@ -37,7 +42,7 @@ hclass: page-heading
 		  	<div class="news">
 		  		<div class="row">
 		  			<div class="col-xs-2">
-							<img class="news-avatar" data-src="holder.js/96x96/social">
+							<img class="news-avatar img-responsive" src="assets/images/industries/{{this.image}}">
 		  			</div>
 		  			<div class="col-xs-10">
 		  				<h2 class="news-heading">{{this.title}}</h2>

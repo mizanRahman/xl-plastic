@@ -5103,6 +5103,8 @@ body {
   font-size: 25px; }
 .news .news-content {
   font-size: 11px; }
+.news .news-avatar {
+  padding-top: 15px; }
 
 .message {
   color: #1674ba;
@@ -5137,9 +5139,7 @@ body {
 .right-industrial-products {
   margin-left: 40px; }
 
-.news-avatar {
-  padding-top: 25px; }
-
+/*things before scss || may be it will be changed to scss */
 .custom-block {
   border-left: 1px solid #cdcdcd;
   border-right: 1px solid #cdcdcd; }

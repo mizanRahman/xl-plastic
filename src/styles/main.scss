@@ -150,6 +150,9 @@ body{
 	.news-content{
 		font-size: $font-size-small;
 	}
+	.news-avatar{
+		padding-top: 15px;
+	}
 }
 
 .message{
@@ -198,21 +201,8 @@ body{
 }
 
 
+/*things before scss || may be it will be changed to scss */
 
-
-
-
-
-
-
-
-
-
-
-
-.news-avatar{
-	padding-top: 25px;
-}
 
 .custom-block{
 	border-left: 1px solid #cdcdcd;
