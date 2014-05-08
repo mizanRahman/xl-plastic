@@ -1,52 +1,55 @@
 ---
 title: Packaging Bags
+message: We will gladly customize Bags and Liners to your specifications
+slogan: let's talk plastic
 image_path: assets/images/packaging_bags
 
 left-items:
   - image: assets/images/packaging_bags/drum.png
-    title: drum liners
+    title: Drum Liners
     description: Drum liners line pails and drums, ensuring a more efficient cleaning process.
 
   - image: assets/images/packaging_bags/boxes.png
-    title: carton liners
-    description: Carton liners line cartons and boxes to protect products, especially during transport
+    title: Carton Liners
+    description: Carton liners line cartons and boxes and boxes to protect products, especially during transport.
 
   - image: assets/images/packaging_bags/pallet.png
-    title: pallet covers
-    description: Pallet covers encase material on pallets, offering protection from the elements
+    title: Pallet Covers
+    description: Pallet covers encase material on pallets, offering protection from the elements.
 
   - image: assets/images/packaging_bags/danger.png
-    title: asbestos liners
+    title: Asbestos Liners
     description: Asbestos liners are used in the removal of asbestos, which can be harmful to those exposed to it.
 
   - image: assets/images/packaging_bags/flame.png
-    title: flame retardent sheets/bags
+    title: Flame Retardant Sheets/Bags
     description: Flame retardant sheets protect contents from fire and other elements.
 
   - image: assets/images/packaging_bags/plant.png
-    title: biodegradable bags
-    description: Biodegradable bags are an environment friendly alternative to regular bags.
+    title: Biodegradable Bags
+    description: Biodegradable bags are an environmentally-friendly alternative to regular bags.
 
 right-items:
   - image: assets/images/packaging_bags/bio.png
-    title: red biohazards
-    description: Red biohazard bags are used to dispose of biological material and medical waste that may present a risk to people, animals or the environment.
+    title: Red Biohazard Bags
+    description: Red biohazard bags are used to dispose of biological material and medical waste that may present a risk to people, animals, or the environment.
 
   - image: assets/images/packaging_bags/pills.png
-    title: pharmaceutical packaging
+    title: Pharmaceutical Packaging
     description: Pharmaceutical packaging is used to transport medication in special pouches that protect the contents.
 
   - image: assets/images/packaging_bags/mattress.png
-    title: mattress bags
-    description: Mattress bags are used to cover and protect mattresses and box springs while moving or storing them, as well as for mattress removal in case such as bed bugs infestations
+    title: Mattress Bags
+    description: Mattress bags are used to cover and protect mattresses and box springs while moving or storing them, as well as for mattress removal in cases such as bed bug infestations.
 
   - image: assets/images/packaging_bags/couch.png
-    title: furniture bags
+    title: Furniture Bags
     description: Furniture bags are used for moving or storing various furniture items.
 
   - image: assets/images/packaging_bags/washer.png
-    title: soiled linen/laundry bags
-    description: soiled linen/laundry bags are bags intended specifically for handling soiled or infectious laundry.
+    title: Soiled Linen/Laundry Bags
+    description: Soiled linen/laundry bags are bags intended specifically for handling soiled or infectious laundry.
+
 
 banner-link: assets/images/page-banners/packaging_bags.jpg
 ---
@@ -56,8 +59,7 @@ banner-link: assets/images/page-banners/packaging_bags.jpg
 
 <div class="container">
 	<h1 class="page-heading">{{title}}</h1>
-
-	<div class="row">
+	<div class="row packaging-bags">
 		<div class="col-xs-6">
 			{{#each left-items}}
 				<div class="row">
@@ -65,8 +67,10 @@ banner-link: assets/images/page-banners/packaging_bags.jpg
 						<span> <img src="{{image}}" alt=""></span>
 					</div>
 					<div class="col-xs-10">
-						<h4 class="uc">{{this.title}}</h4>
-						<p>{{this.description}}</p>
+            <div class="column">
+						  <h3 class="uc title">{{this.title}}</h3>
+  						<p class="desc">{{this.description}}</p>
+            </div>
 					</div>
 
 				</div>
@@ -79,14 +83,26 @@ banner-link: assets/images/page-banners/packaging_bags.jpg
 						<span> <img src="{{image}}" alt=""></span>
 					</div>
 					<div class="col-xs-10">
-						<h4 class="uc">{{this.title}}</h4>
-						<p>{{this.description}}</p>
+            <div class="column">
+						  <h3 class="uc title">{{this.title}}</h3>
+						  <p class="desc">{{this.description}}</p>
+            </div>
 					</div>
 
 				</div>
 			{{/each}}
 		</div>
 	</div>
+
+  <div class="row">
+      <div class="pb-bottom-panel">
+        <div class="center-block">
+          <p class="message">{{message}}</p>
+          <p class="slogan">{{slogan}}</p>
+        </div>
+      </div>
+
+  </div>
 
 
 </div>

@@ -1,92 +1,106 @@
 ---
 title: Products
+
+slides:
+  - image: banner1.jpg
+    caption:
+
+  - image: banner2.jpg
+    caption:
+
+  - image: banner3.jpg
+    caption:
+
+ad1:
+  title: PLASTICS
+  content: X-L Plastics manufactures a wide range of low-density and linear low-density products. X-L Plastics offers an array of sizes to accommodate our customers, as well as the capability to manufacture products to exact specifications. Our main products include
+  link: link/to/page
+
+ad2:
+  title: CUSTOM
+  content: X-L Plastics manufactures a wide range of low-density and linear low-density products. X-L Plastics offers an array of sizes to accommodate our customers, as well as the capability to manufacture products to exact specifications. Our main products include
+  link: link/to/page
+
+ad3:
+  title: RECYCLING
+  content: Custom design is available for Gaylord and box liners as well as all types of coverings; both vented and non-vented material are available. Just supply our friendly sales staff with the exact measurements of the carton or object to be lined or covered, and
+  link: link/to/page
+
+
 ---
 
 <!-- Slider -->
 
+<div class="carousel-container section">
+  <div id="xl-carousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#xl-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#xl-carousel" data-slide-to="1"></li>
+      <li data-target="#xl-carousel" data-slide-to="2"></li>
+    </ol>
 
-<div id="xl-carousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#xl-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#xl-carousel" data-slide-to="1"></li>
-    <li data-target="#xl-carousel" data-slide-to="2"></li>
-  </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      {{#each slides}}
+        {{#if @first}}
+          <div class="item active">
+        {{else}}
+          <div class="item">
+        {{/if}}
+          <img src="assets/images/home/{{this.image}}">
+          <div class="carousel-caption">
+            {{this.caption}}
+          </div>
+        </div>
+      {{/each}}
+    </div>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="assets/images/products_slide_1.jpg">
-      <div class="carousel-caption">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, eligendi eaque provident excepturi quae modi non animi numquam maxime neque saepe dolore hic laboriosam doloremque quasi iste ducimus sapiente odit!
-      </div>
-    </div>
-    <div class="item">
-      <img data-src="holder.js/1280x400/industrial">
-      <div class="carousel-caption">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, eligendi eaque provident excepturi quae modi non animi numquam maxime neque saepe dolore hic laboriosam doloremque quasi iste ducimus sapiente odit!
-      </div>
-    </div>
-    <div class="item">
-      <img data-src="holder.js/1280x400/lava">
-      <div class="carousel-caption">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, eligendi eaque provident excepturi quae modi non animi numquam maxime neque saepe dolore hic laboriosam doloremque quasi iste ducimus sapiente odit!
-      </div>
-    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#xl-carousel" data-slide="prev">
+        <img class="icon-prev" src="assets/images/leftarrow.png" alt="<">
+    </a>
+    <a class="right carousel-control" href="#xl-carousel" data-slide="next">
+      <img class="icon-next" src="assets/images/rightarrow.png" alt=">">
+    </a>
   </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#xl-carousel" data-slide="prev">
-    {{!-- <span class="glyphicon  xl-left glyphicon-chevron-left"> --}}
-      <img class="icon-prev" src="assets/images/leftarrow.png" alt="<">
-
-    </span>
-  </a>
-  <a class="right carousel-control" href="#xl-carousel" data-slide="next">
-    <img class="icon-next" src="assets/images/rightarrow.png" alt=">">
-
-  </a>
 </div>
 
 
 
 <!-- Main content -->
-<br/>
 <div class="container">
 	<!-- showcase -->
-	<div class="row">
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      	<img class="pull-left" data-src="holder.js/505x215/sky">
+	<div class="row section">
+		<div class="col-xs-6">
+      	<img class="pull-left" src="assets/images/home/left_banner.jpg">
 		</div>
-		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      	<img class="pull-right" data-src="holder.js/505x215/sky">
+		<div class="col-xs-6">
+      	<img class="pull-right" src="assets/images/home/right_banner.jpg">
 		</div>
 	</div>
 
-	<br/>
-	<div class="row">
+	<div class="row section">
     <div class="text-center col-xs-4">
-      <img class="center-block img-circle" src="assets/images/custom.png" alt="140x140">
-
-      <h2>{{product.title1}}</h2>
-      <p>{{product.content1}}</p>
+      <img class="center-block img-circle" src="assets/images/home/custom.png" alt="logo">
+      <h2>{{ad1.title}}</h2>
+      <p>{{ad1.content}}</p>
     </div>
     <div class="text-center col-xs-4 custom-block">
-      <img class="center-block img-circle" src="assets/images/plastics.png" alt="140x140">
-      <h2>{{product.title2}}</h2>
-      <p>{{product.content2}}</p>
+      <img class="center-block img-circle" src="assets/images/home/plastics.png" alt="logo">
+      <h2>{{ad2.title}}</h2>
+      <p>{{ad2.content}}</p>
 
     </div>
     <div class="text-center col-xs-4">
-      <img class="center-block img-circle" src="assets/images/recycle.png" alt="140x140">
-      <h2>{{product.title3}}</h2>
-      <p>{{product.content3}}</p>
+      <img class="center-block img-circle" src="assets/images/home/recycle.png" alt="logo">
+      <h2>{{ad3.title}}</h2>
+      <p>{{ad3.content}}</p>
     </div>
   </div>
 
-  <br/>
-  <div class="row">
-    <img class="img-responsive center-block" data-src="holder.js/1027x200/sky">
+  <div class="row section">
+    <img class="img-responsive center-block" src="assets/images/home/bottom_image.jpg">
   </div>
 </div>
 

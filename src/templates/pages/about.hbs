@@ -1,9 +1,18 @@
 ---
 title: About Us
 subtitle: Who We Are
-message: We Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, consequatur, voluptatem, voluptatibus, ut voluptatum nam eligendi illo tempora dolores quo nihil eos perferendis obcaecati voluptates quam. Odit, doloribus ratione quibusdam.
 
-quote: x-l plascic is Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sunt ad placeat explicabo facilis vel porro cupiditate officiis illo sequi!
+messages:
+  - "X-L Plastics is a manufacturer and distributor of polyethylene film, liners, bags, etc. X-L Plastics can meet virtually any polyethylene packaging need with its extensive selection of products and sizes, and large variety of specialty items, custom packaging, and printing options. When it was founded back in 1971, the company initially acted strictly as a distributor of polyethylene film and bags. By 1976, in an effort to ensure that its customers received the highest quality plastic possible, X-L Plastics had begun to manufacture its own products."
+
+  - "The company has grown tremendously since its inception all those decades ago. From a mere four employees, X-L Plastics’ staff has increased to a total of 175 employees. Necessitated by its expansion, the X-L Plastics plant has twice moved to larger facilities. Presently, the plant is located in the city of Clifton, in Passaic County, New Jersey. X-L Plastics’ current site boasts a combined office and manufacturing space of 250,000 square feet. X-L Plastics currently has 18 extruders working ceaselessly 24 hours a day, and three recycling machines on premises."
+
+  - "X-L Plastics is a family-owned business. Three generations’ worth of hard work and dedication has shaped the company and the way it does business. Moreover, as an American-born-and-bred company, X-L Plastics’ products are manufactured solely in the United States. In addition, because it is located in the U.S., X-L Plastics can offer a quick turnaround, short delivery time, and quality control. When clients place orders with X-L Plastics, they can expect an extensive selection, competitive pricing, and prompt delivery."
+
+
+
+
+quote: "“When clients place orders with X-L Plastics, they can expect an extensive selection, competitive pricing, and prompt delivery.”"
 
 banner-link: assets/images/page-banners/about.jpg
 ---
@@ -16,7 +25,9 @@ banner-link: assets/images/page-banners/about.jpg
 		<div class="col-xs-12">
 			<h1 class="page-heading">{{title}}</h1>
 			<h2 class="page-subheading">{{subtitle}}</h2>
-			<p class="message">{{message}}</p>
+			{{#each messages}}
+				<p class="message">{{this}}</p>
+			{{/each}}
 			<br>
 			<div class="text-center">
 				<img src="assets/images/about-items.jpg">
@@ -24,7 +35,7 @@ banner-link: assets/images/page-banners/about.jpg
 			<br>
 			<div class="news-panel ">
 				<div style="width:600px;"   class="center-block">
-					<p class="text-center">"{{quote}}"</p>
+					<p class="text-center">{{quote}}</p>
 				</div>
 			</div>
 		</div>

@@ -1,0 +1,19 @@
+.carousel-caption{
+	font-size: $font-size-h1;
+}
+.carousel-container{
+	@include container-fixed();
+	width: $carousel-width;
+	@extend .img-responsive;
+
+}
+
+.carousel-control {
+  // Set gradients for backgrounds
+  &.left {
+    @include gradient-horizontal($start-color: rgba(0,0,0,.005), $end-color: rgba(0,0,0,.0001));
+  }
+  &.right {
+    @include gradient-horizontal($start-color: rgba(0,0,0,.0001), $end-color: rgba(0,0,0,.005));
+  }
+}

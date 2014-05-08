@@ -20,111 +20,12 @@ body{
 	background-color: $bg-color;
 }
 
-.logo{padding-top: 15px;}
-
-.contact-phone{
-	color: $gray-light;
-	.tel-icon{color: $primary-color;margin-right: 5px;}
+.section{
+	margin-bottom: 40px;
 }
-
-.msg-icon{font-size: $font-size-base*1.5;}
 
 .xl-navbar, .xl-footer {
     text-transform: uppercase;
-}
-
-.xl-navbar {
-    margin-top: 65px;
-    margin-bottom: 0;
-}
-
-.navbar-nav>li{
-  border-top: 1px solid $gray-light;
-}
-
-.navbar-nav>li,
-.dropdown-menu{
-	min-width: 129px;
-	padding: 0;
-	&:hover{
-	  border-color: $bg-color;
-	}
-}
-
-.navbar {
-  // margin-bottom: $navbar-margin-bottom;
-  border: 0px solid transparent;
-}
-// /*stop and change navigation color change default of  bootstrap*/
-// .nav>li>a:hover,
-// .nav>li>a:active{
-// 	background-color: $blue !important;
-// }
-
-// .dropdown-menu>li{
-// 	border-bottom:1px solid lighten($blue,10%);
-// 	padding: 5px 2px;
-// }
-
-.dropdown-menu>li>a{
-	padding: 0;
-	font-weight: 300;
-	line-height: 36px;
-}
-
-.dropdown-menu>li:not(:first-child){
-	border-top: 1px solid;
-	border-color: rgba(255,255,255,0.5);
-	font-size: $font-size-small;
-}
-
-.navbar-nav>li>a{
-}
-
-.navbar-nav {
-	> .dropdown > a .caret {
-      border-top-color: $navbar-default-link-color;
-      border-bottom-color: $navbar-default-link-color;
-	}
-
-  > li > a {
-  	color: $gray-light !important;
-  }
-  // Uncollapse the nav
-  @media (min-width: $grid-float-breakpoint) {
-    float: left;
-    margin: 0;
-
-    > li {
-      float: left;
-      > a {
-        padding-top: (($navbar-height - $line-height-computed) / 6);
-        padding-bottom: (($navbar-height - $line-height-computed)*5 / 6);
-      }
-    }
-  }
-
-}
-
-.xl-navbar a
-{
-    // font-weight: 400 !important;
-		text-align: center;
-}
-
-.xl-footer {
-	color: #fff;
-  background-color: $footer-bg;
-
-  .tel{
-  	font-size: 15px;
-  	font-weight: lighter;
-
-  	.num{
-  		font-size:20px;
-	  	font-weight: normal;
-  	}
-  }
 }
 
 
@@ -200,6 +101,39 @@ body{
 	margin-left: 40px;
 }
 
+.news-panel{
+	border-right: 2px solid #cdcdcd;
+	border-bottom: 2px solid #cdcdcd;
+}
+
+
+.packaging-bags{
+	color:$secondary-color;
+	.column{
+		padding: 0px 50px 0px 40px;
+		.title{}
+		.desc{
+			font-size: $font-size-large;
+		}
+	}
+}
+.pb-bottom-panel{
+	margin-top: 20px;
+	padding: 12px 20px;
+	background-color: $bg-color;
+	text-transform: uppercase;
+
+	border-right: 6px solid #cdcdcd;
+	border-bottom: 2px solid #cdcdcd;
+
+	@extend .text-center;
+	.slogan{
+		color: $primary-color;
+		font-weight: bold;
+		font-size: $font-size-h2;
+
+	}
+}
 
 /*things before scss || may be it will be changed to scss */
 
@@ -210,10 +144,7 @@ body{
 
 }
 
-.news-panel{
-	border-right: 2px solid #cdcdcd;
-	border-bottom: 2px solid #cdcdcd;
-}
+
 .news:not(:first-child){
 	border-top: 1px solid #cfcfcf;
 }
