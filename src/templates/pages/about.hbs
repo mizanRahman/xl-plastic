@@ -20,26 +20,29 @@ banner-link: assets/images/page-banners/about.jpg
 {{> banner }}
 
 
-<div class="container">
+<div class="container about-us">
 	<div class="row">
 		<div class="col-xs-12">
 			<h1 class="page-heading">{{title}}</h1>
-			<h2 class="page-subheading">{{subtitle}}</h2>
+			<h1 class="subtitle">{{subtitle}}</h1>
 			{{#each messages}}
-				<p class="message">{{this}}</p>
+				<p class="details">{{this}}</p>
 			{{/each}}
 			<br>
 			<div class="text-center">
 				<img src="assets/images/about-items.jpg">
 			</div>
 			<br>
-			<div class="news-panel ">
-				<div style="width:600px;"   class="center-block">
-					<p class="text-center">{{quote}}</p>
+			<div class="pb-bottom-panel">
+				<div  class="center-block">
+          <p class="message">{{quote}}</p>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
+
 </div>
 
 

@@ -38,23 +38,35 @@ body{
 
 .page-subheading{
 	color: $primary-color;
+	font-weight: 900;
 	text-transform: uppercase;
-
 }
-.news{
 
+.two-bordered-panel{
+	border-right: 2px solid #cdcdcd;
+	border-bottom: 2px solid #cdcdcd;
+}
+
+.news{
+	@extend .two-bordered-panel;
 	.news-heading{
 		text-transform: uppercase;
 		color: $primary-color;
-		font-size: 25px;
+		// font-size: 25px;
+		font-size: $font-size-h1*1.25;
 	}
 	.news-content{
-		font-size: $font-size-small;
+		font-size: $font-size-large;
+		color: $news-content-color;
 	}
 	.news-avatar{
 		padding-top: 15px;
 	}
 }
+
+// .news:not(:first-child){
+// 	border-top: 1px solid #cfcfcf;
+// }
 
 .message{
 	color: $primary-color;
@@ -74,49 +86,27 @@ body{
 	p{
 		font-size: $font-size-small;
 	}
-	.col,
-	.left-col,
-	.right-col{
+	.col{
 		background-color: $primary-color;
-		//padding: 10px;
-		//padding-left: 20px;
 	}
-
-	.left-col{
+	.col:not(:last-child){
 		border-right: 1px solid $bg-color;
+	}
+	.col:first-child{
 		@include border-left-radius(8px);
 
 	}
-	.right-col{
+	.col:last-child{
 		@include border-right-radius(8px);
-
-
 	}
+
 }
 
+.right-industrial-products,
 .left-industrial-products{
-	margin-left: 40px;
-}
-.right-industrial-products{
-	margin-left: 40px;
+	padding-left: 60px;
 }
 
-.news-panel{
-	border-right: 2px solid #cdcdcd;
-	border-bottom: 2px solid #cdcdcd;
-}
-
-
-.packaging-bags{
-	color:$secondary-color;
-	.column{
-		padding: 0px 50px 0px 40px;
-		.title{}
-		.desc{
-			font-size: $font-size-large;
-		}
-	}
-}
 .pb-bottom-panel{
 	margin-top: 20px;
 	padding: 12px 20px;
@@ -135,6 +125,58 @@ body{
 	}
 }
 
+/*page specific css*/
+
+.about-us{
+	color:$primary-color;
+	.subtitle{
+		font-weight: lighter;
+		font-size: $font-size-h1*1.25;
+		// font-family: none;
+	}
+	.details{
+		font-size: $font-size-large;
+		color: $secondary-color;
+
+	}
+}
+
+.contact{
+	.title{
+		@extend .page-heading;
+		font-size: $font-size-h1 * 1.25;
+	}
+	.details{
+		font-size: $font-size-large;
+	}
+	.icon{
+		font-size: $font-size-h1;
+		color:$gray-light;
+	}
+	.contact-info{
+		font-size: $font-size-h3;
+		color:$secondary-color;
+	}
+}
+
+.packaging-bags{
+	color:$secondary-color;
+	.column{
+		padding: 0px 50px 0px 40px;
+		.title{}
+		.desc{
+			font-size: $font-size-large;
+		}
+	}
+}
+
+.banner{
+	@extend .center-block;
+	@extend  .img-responsive;
+}
+
+
+
 /*things before scss || may be it will be changed to scss */
 
 
@@ -145,9 +187,7 @@ body{
 }
 
 
-.news:not(:first-child){
-	border-top: 1px solid #cfcfcf;
-}
+
 
 .bottom-logo{
 	padding-top: 30px;

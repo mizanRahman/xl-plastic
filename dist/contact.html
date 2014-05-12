@@ -32,12 +32,13 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-xs-1">
+    <div class="col-xs-2">
       <a href="/">
         <img class=" logo pull-right " src="assets/images/logo.png" alt="">
       </a>
+      <p></p>
     </div>
-    <div class="col-xs-11">
+    <div class="col-xs-10">
       <div class="row">
         <div class="col-xs-12 pull-right">
           <div class="row">
@@ -51,7 +52,7 @@
               <div class="container-fluid">
                 <div>
                   <ul class="nav navbar-nav">
-                    <li class="dropdown">
+                    <li class="dropdown ">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
                       <ul class="dropdown-menu">
                         <li><a href="packaging_bags.html">packaging bags</a></li>
@@ -63,7 +64,7 @@
                   </ul>
 
                   <ul class="nav navbar-nav">
-                    <li class="dropdown">
+                    <li class="dropdown ">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Industries <b class="caret"></b></a>
                       <ul class="dropdown-menu">
                         <li><a href="pharmaceuticals.html">pharmaceuticals</a></li>
@@ -73,11 +74,10 @@
                   </ul>
 
                   <ul class="nav navbar-nav">
-                    <li><a href="how-it-works.html">how it works</a></li>
-                    <li><a href="recycling.html">Recycling</a></li>
-                    <li><a href="about.html">AboutUs</a></li>
-                    <li><a href="team.html">our team</a></li>
-                    <li><a href="contact.html">contact</a></li>
+                    <li ><a href="how-it-works.html">how it works</a></li>
+                    <li ><a href="recycling.html">Recycling</a></li>
+                    <li ><a href="about.html">About Us</a></li>
+                    <li class="active"><a href="contact.html">contact</a></li>
                   </ul>
                 </div>
               </div>
@@ -90,27 +90,30 @@
 </div>
 
 
+
+
     <div class=" left-wave" role="main">
       <div class="page right-wave">
         
 
 <div>
-	<img class="img-responsive" src="assets/images/page-banners/contact.jpg">
+	<img class="banner" src="assets/images/page-banners/contact.jpg">
 </div>
 
 
 
 
-<div class="container">
-	<h1 >LET&#x27;S TALK PLASTIC</h1>
-	<p>X-L Plastics has dedicated itself to providing quality bags and liners for its customers for more than 40 years. The wide range of bags, liners, covers, film, sheeting, tubing and shrink packaging that are available allows X-L Plastics’ expert staff to personally analyze the requirements of clients and provide them with customized solutions.</p>
+<div class="container contact">
+	<h1 class="title">LET&#x27;S TALK PLASTIC</h1>
+	<p class="details">X-L Plastics has dedicated itself to providing quality bags and liners for its customers for more than 40 years. The wide range of bags, liners, covers, film, sheeting, tubing and shrink packaging that are available allows X-L Plastics’ expert staff to personally analyze the requirements of clients and provide them with customized solutions.</p>
 	<br>
 	<div class="row">
 		<div class="col-xs-5 col-xs-offset-1">
-
-			<p><span class="glyphicon glyphicon-earphone">&nbsp</span>1.800.524.0781</p>
-			<p><span class="glyphicon glyphicon-phone">&nbsp</span>letstalk@xl-plastic.com</p>
-			<p><span class="glyphicon glyphicon-envelope">&nbsp</span>220,clifton blvd, clifton, nj 07011</p>
+			<div class="contact-info">
+				<p><span class="icon glyphicon glyphicon-earphone">&nbsp</span>1.800.524.0781</p>
+				<p><span class="icon glyphicon glyphicon-phone">&nbsp</span>letstalk@xl-plastic.com</p>
+				<p><span class="icon glyphicon glyphicon-envelope">&nbsp</span>220,clifton blvd, clifton, nj 07011</p>
+			</div>
 		</div>
 
 		<div class="col-xs-6">
@@ -206,5 +209,14 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/holder.js"></script>
+    <script type="text/javascript">
+          $('ul.nav li.dropdown').hover(function() {
+              $(this).closest('.dropdown-menu').stop(true, true).show();
+              $(this).addClass('open');
+            }, function() {
+              $(this).closest('.dropdown-menu').stop(true, true).hide();
+              $(this).removeClass('open');
+            });
+    </script>
   </body>
 </html>

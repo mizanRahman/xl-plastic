@@ -289,7 +289,7 @@ a {
 img {
   vertical-align: middle; }
 
-.img-responsive, .carousel-container {
+.img-responsive, .carousel-container, .banner {
   display: block;
   max-width: 100%;
   height: auto; }
@@ -4621,7 +4621,7 @@ button.close {
 .clearfix:after {
   clear: both; }
 
-.center-block {
+.center-block, .banner {
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -5048,14 +5048,19 @@ td.visible-print {
 
 .navbar-nav > li {
   border-top: 1px solid #999999; }
+  .navbar-nav > li > a:hover, .navbar-nav > li.active > a {
+    background-image: url("../images/dropdown_xl_active.png");
+    background-color: white; }
+  .navbar-nav > li.dropdown.open > a {
+    background-color: #1674ba;
+    background-image: url("../images/dropdown_xl.png"); }
+  .navbar-nav > li:hover, .navbar-nav > li.dropdown.open, .navbar-nav > li.active {
+    border-color: white; }
 
 .navbar-nav > li,
 .dropdown-menu {
-  min-width: 129px;
+  min-width: 140px;
   padding: 0; }
-  .navbar-nav > li:hover,
-  .dropdown-menu:hover {
-    border-color: white; }
 
 .carousel-caption {
   font-size: 31px; }
@@ -5122,7 +5127,7 @@ body {
 .xl-navbar, .xl-footer {
   text-transform: uppercase; }
 
-.page-heading {
+.page-heading, .contact .title {
   color: #1674ba;
   text-transform: uppercase;
   font-size: 68px;
@@ -5130,14 +5135,20 @@ body {
 
 .page-subheading {
   color: #1674ba;
+  font-weight: 900;
   text-transform: uppercase; }
+
+.two-bordered-panel, .news {
+  border-right: 2px solid #cdcdcd;
+  border-bottom: 2px solid #cdcdcd; }
 
 .news .news-heading {
   text-transform: uppercase;
   color: #1674ba;
-  font-size: 25px; }
+  font-size: 38.75px; }
 .news .news-content {
-  font-size: 11px; }
+  font-size: 15px;
+  color: #002b55; }
 .news .news-avatar {
   padding-top: 15px; }
 
@@ -5156,34 +5167,20 @@ body {
   margin: 0 5px 20px 5px; }
   .xl-table p {
     font-size: 11px; }
-  .xl-table .col,
-  .xl-table .left-col,
-  .xl-table .right-col {
+  .xl-table .col {
     background-color: #1674ba; }
-  .xl-table .left-col {
-    border-right: 1px solid white;
+  .xl-table .col:not(:last-child) {
+    border-right: 1px solid white; }
+  .xl-table .col:first-child {
     border-bottom-left-radius: 8px;
     border-top-left-radius: 8px; }
-  .xl-table .right-col {
+  .xl-table .col:last-child {
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px; }
 
+.right-industrial-products,
 .left-industrial-products {
-  margin-left: 40px; }
-
-.right-industrial-products {
-  margin-left: 40px; }
-
-.news-panel {
-  border-right: 2px solid #cdcdcd;
-  border-bottom: 2px solid #cdcdcd; }
-
-.packaging-bags {
-  color: #1982d1; }
-  .packaging-bags .column {
-    padding: 0px 50px 0px 40px; }
-    .packaging-bags .column .desc {
-      font-size: 15px; }
+  padding-left: 60px; }
 
 .pb-bottom-panel {
   margin-top: 20px;
@@ -5197,13 +5194,38 @@ body {
     font-weight: bold;
     font-size: 25px; }
 
+/*page specific css*/
+.about-us {
+  color: #1674ba; }
+  .about-us .subtitle {
+    font-weight: lighter;
+    font-size: 38.75px; }
+  .about-us .details {
+    font-size: 15px;
+    color: #1982d1; }
+
+.contact .title {
+  font-size: 38.75px; }
+.contact .details {
+  font-size: 15px; }
+.contact .icon {
+  font-size: 31px;
+  color: #999999; }
+.contact .contact-info {
+  font-size: 21px;
+  color: #1982d1; }
+
+.packaging-bags {
+  color: #1982d1; }
+  .packaging-bags .column {
+    padding: 0px 50px 0px 40px; }
+    .packaging-bags .column .desc {
+      font-size: 15px; }
+
 /*things before scss || may be it will be changed to scss */
 .custom-block {
   border-left: 1px solid #cdcdcd;
   border-right: 1px solid #cdcdcd; }
-
-.news:not(:first-child) {
-  border-top: 1px solid #cfcfcf; }
 
 .bottom-logo {
   padding-top: 30px;

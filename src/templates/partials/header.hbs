@@ -1,16 +1,21 @@
 ---
 component: navbar
+
+product_pages: 'packaging_bags food_products industrial_products custom_orders'
+industries_pages: pharmaceuticals industries
+
 ---
 
 
 <div class="container">
   <div class="row">
-    <div class="col-xs-1">
+    <div class="col-xs-2">
       <a href="/">
         <img class=" logo pull-right " src="assets/images/logo.png" alt="">
       </a>
+      <p></p>
     </div>
-    <div class="col-xs-11">
+    <div class="col-xs-10">
       <div class="row">
         <div class="col-xs-12 pull-right">
           <div class="row">
@@ -24,7 +29,7 @@ component: navbar
               <div class="container-fluid">
                 <div>
                   <ul class="nav navbar-nav">
-                    <li class="dropdown">
+                    <li class="dropdown {{#contains 'packaging_bags food_products industrial_products custom_orders' basename }}active{{/contains}}">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
                       <ul class="dropdown-menu">
                         <li><a href="packaging_bags.html">packaging bags</a></li>
@@ -36,7 +41,7 @@ component: navbar
                   </ul>
 
                   <ul class="nav navbar-nav">
-                    <li class="dropdown">
+                    <li class="dropdown {{#contains 'pharmaceuticals industries' basename}}active{{/contains}}">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Industries <b class="caret"></b></a>
                       <ul class="dropdown-menu">
                         <li><a href="pharmaceuticals.html">pharmaceuticals</a></li>
@@ -46,11 +51,10 @@ component: navbar
                   </ul>
 
                   <ul class="nav navbar-nav">
-                    <li><a href="how-it-works.html">how it works</a></li>
-                    <li><a href="recycling.html">Recycling</a></li>
-                    <li><a href="about.html">AboutUs</a></li>
-                    <li><a href="team.html">our team</a></li>
-                    <li><a href="contact.html">contact</a></li>
+                    <li {{#is basename 'how-it-works'}}class="active"{{/is}}><a href="how-it-works.html">how it works</a></li>
+                    <li {{#is basename 'recycling'}}class="active"{{/is}}><a href="recycling.html">Recycling</a></li>
+                    <li {{#is basename 'about'}}class="active"{{/is}}><a href="about.html">About Us</a></li>
+                    <li {{#is basename 'contact'}}class="active"{{/is}}><a href="contact.html">contact</a></li>
                   </ul>
                 </div>
               </div>
@@ -61,3 +65,5 @@ component: navbar
     </div>
   </div>
 </div>
+
+

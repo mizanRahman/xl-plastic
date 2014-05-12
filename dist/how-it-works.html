@@ -32,12 +32,13 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-xs-1">
+    <div class="col-xs-2">
       <a href="/">
         <img class=" logo pull-right " src="assets/images/logo.png" alt="">
       </a>
+      <p></p>
     </div>
-    <div class="col-xs-11">
+    <div class="col-xs-10">
       <div class="row">
         <div class="col-xs-12 pull-right">
           <div class="row">
@@ -51,7 +52,7 @@
               <div class="container-fluid">
                 <div>
                   <ul class="nav navbar-nav">
-                    <li class="dropdown">
+                    <li class="dropdown ">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
                       <ul class="dropdown-menu">
                         <li><a href="packaging_bags.html">packaging bags</a></li>
@@ -63,7 +64,7 @@
                   </ul>
 
                   <ul class="nav navbar-nav">
-                    <li class="dropdown">
+                    <li class="dropdown ">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Industries <b class="caret"></b></a>
                       <ul class="dropdown-menu">
                         <li><a href="pharmaceuticals.html">pharmaceuticals</a></li>
@@ -73,11 +74,10 @@
                   </ul>
 
                   <ul class="nav navbar-nav">
-                    <li><a href="how-it-works.html">how it works</a></li>
-                    <li><a href="recycling.html">Recycling</a></li>
-                    <li><a href="about.html">AboutUs</a></li>
-                    <li><a href="team.html">our team</a></li>
-                    <li><a href="contact.html">contact</a></li>
+                    <li class="active"><a href="how-it-works.html">how it works</a></li>
+                    <li ><a href="recycling.html">Recycling</a></li>
+                    <li ><a href="about.html">About Us</a></li>
+                    <li ><a href="contact.html">contact</a></li>
                   </ul>
                 </div>
               </div>
@@ -90,6 +90,8 @@
 </div>
 
 
+
+
     <div class=" left-wave" role="main">
       <div class="page right-wave">
         
@@ -98,23 +100,26 @@
 
 
 <div>
-	<img class="img-responsive" src="assets/images/page-banners/materials.jpg">
+	<img class="banner" src="assets/images/page-banners/materials.jpg">
 </div>
-<div class="container">
+<div class="container ">
 	<h1 class="page-heading">Product Materials</h1>
 	<div class="row">
 		<div class="col-xs-6">
-			<p class="message">X-L Plastics manufactures a wide range of low-density and linear low-density products.</p>
-			<h3 class="page-subheading"></h3>
+			<div class="row">
+				<div class="col-xs-9">
+					<p class="message">X-L Plastics manufactures a wide range of low-density and linear low-density products.</p>
+				</div>
+			</div>
+					<h1 class="page-subheading"></h1>
 		</div>
-
-		<div class="col-xs-6 news-panel">
+		<div class="col-xs-6 news">
 			
 				<h2 class="news-heading">Products</h2>
-				<p>X-L Plastics offers an array of sizes to accommodate our customers, as well as the capability to manufacture products to exact specifications. Our main products include a variety of packaging material carton and drum liners; textile and carpet coverings; and furniture and mattress protectors.</p>
+				<p class="news-content">X-L Plastics offers an array of sizes to accommodate our customers, as well as the capability to manufacture products to exact specifications. Our main products include a variety of packaging material carton and drum liners; textile and carpet coverings; and furniture and mattress protectors.</p>
 			
 				<h2 class="news-heading">Additives</h2>
-				<p>Film properties can also be changed to increase strength, toughness, and clarity by blending resins with different characteristics, as well as by adding chemical components for frac melt, anti-static, and friction control. These manufacturing techniques allow the material to achieve distinct product characteristics so we can meet the exact specifications of our clients.</p>
+				<p class="news-content">Film properties can also be changed to increase strength, toughness, and clarity by blending resins with different characteristics, as well as by adding chemical components for frac melt, anti-static, and friction control. These manufacturing techniques allow the material to achieve distinct product characteristics so we can meet the exact specifications of our clients.</p>
 			
 		</div>
 	</div>
@@ -181,5 +186,14 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/holder.js"></script>
+    <script type="text/javascript">
+          $('ul.nav li.dropdown').hover(function() {
+              $(this).closest('.dropdown-menu').stop(true, true).show();
+              $(this).addClass('open');
+            }, function() {
+              $(this).closest('.dropdown-menu').stop(true, true).hide();
+              $(this).removeClass('open');
+            });
+    </script>
   </body>
 </html>

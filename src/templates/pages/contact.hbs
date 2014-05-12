@@ -1,6 +1,6 @@
 ---
 title: LET'S TALK PLASTIC
-subtitle: "X-L Plastics has dedicated itself to providing quality bags and liners for its customers for more than 40 years. The wide range of bags, liners, covers, film, sheeting, tubing and shrink packaging that are available allows X-L Plastics’ expert staff to personally analyze the requirements of clients and provide them with customized solutions."
+details: "X-L Plastics has dedicated itself to providing quality bags and liners for its customers for more than 40 years. The wide range of bags, liners, covers, film, sheeting, tubing and shrink packaging that are available allows X-L Plastics’ expert staff to personally analyze the requirements of clients and provide them with customized solutions."
 
 banner-link: assets/images/page-banners/contact.jpg
 
@@ -11,16 +11,17 @@ banner-link: assets/images/page-banners/contact.jpg
 
 
 
-<div class="container">
-	<h1 >{{title}}</h1>
-	<p>{{subtitle}}</p>
+<div class="container contact">
+	<h1 class="title">{{title}}</h1>
+	<p class="details">{{details}}</p>
 	<br>
 	<div class="row">
 		<div class="col-xs-5 col-xs-offset-1">
-
-			<p><span class="glyphicon glyphicon-earphone">&nbsp</span>{{site.contact.phone}}</p>
-			<p><span class="glyphicon glyphicon-phone">&nbsp</span>{{site.contact.website}}</p>
-			<p><span class="glyphicon glyphicon-envelope">&nbsp</span>{{site.contact.address}}</p>
+			<div class="contact-info">
+				<p><span class="icon glyphicon glyphicon-earphone">&nbsp</span>{{site.contact.phone}}</p>
+				<p><span class="icon glyphicon glyphicon-phone">&nbsp</span>{{site.contact.website}}</p>
+				<p><span class="icon glyphicon glyphicon-envelope">&nbsp</span>{{site.contact.address}}</p>
+			</div>
 		</div>
 
 		<div class="col-xs-6">

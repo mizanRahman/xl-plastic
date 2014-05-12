@@ -43,5 +43,14 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{assets}}/js/bootstrap.min.js"></script>
     <script src="{{assets}}/js/holder.js"></script>
+    <script type="text/javascript">
+          $('ul.nav li.dropdown').hover(function() {
+              $(this).closest('.dropdown-menu').stop(true, true).show();
+              $(this).addClass('open');
+            }, function() {
+              $(this).closest('.dropdown-menu').stop(true, true).hide();
+              $(this).removeClass('open');
+            });
+    </script>
   </body>
 </html>
